@@ -17,7 +17,7 @@ class courses {
 	{
 		foreach ($this->data as $key => $value) 
 		{
-			return $this->data[$key]['surname'];
+			return $this->data[$key]['code'];
 		}
 	}
 }
