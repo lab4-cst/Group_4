@@ -2,24 +2,20 @@
 
 use CodeIgniter\API\ResponseTrait;
 
-class classes extends \CodeIgniter\Controller
+class courses extends \CodeIgniter\Controller
 {
     use ResponseTrait;
 
     public function create()
     {
-        $model = new UserModel();
-        $user  = $model->save($this->request->getPost());
-
-        // Respond with 201 status code
-        return $this->respondCreated();
+        return $this->fail('Not implemented',418);
     }
 	public function index()
 	{
-		return students;
+		return $this->load->model('courses');
 	}
 	public function show($id){
-		return students($id);
+		return courses($id);
 	}
 	public function edit($id){
 		return $this->fail('Not implemented',418);
